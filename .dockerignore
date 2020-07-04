@@ -1,0 +1,9 @@
+# miscellaneous
+.git
+.gitignore
+Dockerfile.dev
+README.md
+
+# folders
+node_modules
+build
