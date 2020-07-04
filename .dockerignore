@@ -4,6 +4,11 @@
 Dockerfile.dev
 README.md
 
-# folders
+# dependencies
 node_modules
+
+# testing
+coverage
+
+# production
 build
