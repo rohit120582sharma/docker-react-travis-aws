@@ -1,0 +1,15 @@
+sudo: required
+
+language: generic
+
+# Download and install the docker
+services:
+    - docker
+
+# Build an image for development
+before_install:
+    - docker build -t docker-react-travis-aws -f Dockerfile.dev .
+
+# Run a container for testing
+script:
+    - docker run -e CI=true docker-react-travis-aws npm run test -- --coverage
